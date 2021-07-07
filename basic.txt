@@ -2,201 +2,201 @@ Structure: Command + number + motion
 
 1. Move (Normal mode)
 
-h : left
-j  : down
-k : up
-l : right
+    h : left
+    j  : down
+    k : up
+    l : right
 
-$ : move to end of line
-0 : move to begin of line
+    $ : move to end of line
+    0 : move to begin of line
 
-w : move to begin of next word
-e : move to end of next word
+    w : move to begin of next word
+    e : move to end of next word
 
-gg : move to begin of file
-G : move to end of file
-50G : move to 50th line of file
+    gg : move to begin of file
+    G : move to end of file
+    50G : move to 50th line of file
 
-[[ : move to begin of function
-]] : move to end of function
+    [[ : move to begin of function
+    ]] : move to end of function
 
-[{ : move to begin of block
-}] : move to end of block
+    [{ : move to begin of block
+    }] : move to end of block
 
-% : move to brackets in line
+    % : move to brackets in line
 
-gt : move to next tab
-L : move to end of screen
+    gt : move to next tab
+    L : move to end of screen
 
-20 : move to 20th column
+    20 : move to 20th column
 
-.  :  repeat previous action in normal mode
-5. : repeat 5 times
-Ctrl G : current position
+    .  :  repeat previous action in normal mode
+    5. : repeat 5 times
+    Ctrl G : current position
 
 2. Quit and write file
 
-:q! : quit 
-:wq! : quit and write
+    :q! : quit 
+    :wq! : quit and write
 
 3. Insert mode 
 
-i : turn on insert mode at before cursor letter
-a : turn on insert mode at after cursor letter
-A : insert to end of line 
-I : insert to begin of line
-o : insert in the new line
+    i : turn on insert mode at before cursor letter
+    a : turn on insert mode at after cursor letter
+    A : insert to end of line 
+    I : insert to begin of line
+    o : insert in the new line
 
 4. Delete 
 
-x : delete a letter
-dw : delete a word
-dd : delete a line
-d3j : delete 3 lines
-d$ : delete from cursor to end 
-d2w : delete 2 words
+    x : delete a letter
+    dw : delete a word
+    dd : delete a line
+    d3j : delete 3 lines
+    d$ : delete from cursor to end 
+    d2w : delete 2 words
 
 5. Change 
 
-cw : change a word
-c$ : change a line 
+    cw : change a word
+    c$ : change a line 
 
 6. Replace mode
 
-R : turn on replace mode
+    R : turn on replace mode
 
-:%s/old/new/g : replace all olds become news in file
-:%s/onward/forward/gi : Replace toàn bộ onward thành forward ở trong file, case unsensitive
-%s/old/new/gc : replace all olds become news in file attach confirm
-:2,35s/old/new/g : replace all olds become news from second line to 35th line
-:5,$s/old/new/g  : replace all olds become news from fifth line to EOF (end of file) 
-:%s/^/hello/g : add to begin of line 'hello'
-:%s/$/Harry/g : add to end of line 'Harry'
-:g/string/d : delete all lines contain 'string'
-:(/Bill/Steve/g : replace Bill become Steve in current line
-Ctrl+a  : +1 cho số tại nơi con trỏ đang chỉ
-Ctrl+x   : :1 cho số tại nơi con trỏ đang chỉ
+    :%s/old/new/g : replace all olds become news in file
+    :%s/onward/forward/gi : Replace toàn bộ onward thành forward ở trong file, case unsensitive
+    %s/old/new/gc : replace all olds become news in file attach confirm
+    :2,35s/old/new/g : replace all olds become news from second line to 35th line
+    :5,$s/old/new/g  : replace all olds become news from fifth line to EOF (end of file) 
+    :%s/^/hello/g : add to begin of line 'hello'
+    :%s/$/Harry/g : add to end of line 'Harry'
+    :g/string/d : delete all lines contain 'string'
+    :(/Bill/Steve/g : replace Bill become Steve in current line
+    Ctrl+a  : +1 cho số tại nơi con trỏ đang chỉ
+    Ctrl+x   : :1 cho số tại nơi con trỏ đang chỉ
 
 7. Search 
 
-?content : search from cursor up
-/content : search from cursor down
-n : next content
-*: search cursor word
+    ?content : search from cursor up
+    /content : search from cursor down
+    n : next content
+    *: search cursor word
 
-/<the : begin by 'the' => theatre or then
-/the> : end by 'the' => breathe
-/\cstring : find "String" both of uppercase and lowercase 
-/jo[ha]n : find "john" and "joan"
+    /<the : begin by 'the' => theatre or then
+    /the> : end by 'the' => breathe
+    /\cstring : find "String" both of uppercase and lowercase 
+    /jo[ha]n : find "john" and "joan"
 
 8. Select 
 
-v : select 1 letter and increase when move by (j, k, h, l)
-vv : select 1 line
-Vap : select 1 paragraph
-ggVG : select all
+    v : select 1 letter and increase when move by (j, k, h, l)
+    vv : select 1 line
+    Vap : select 1 paragraph
+    ggVG : select all
 
 9. Undo
 
-u : undo
-Ctrl R : undo the undo's
+    u : undo
+    Ctrl R : undo the undo's
 
 10. Paste/put 
 
-p : paste/put
-5p : paste 5 times
+    p : paste/put
+    5p : paste 5 times
 
 11. Copy 
 
-y : yank
-yw : copy a word
-y$ : copy to end of line
-y3j : copy 4 lines
-yy : copy current line
-2yy : copy 2 lines
+    y : yank
+    yw : copy a word
+    y$ : copy to end of line
+    y3j : copy 4 lines
+    yy : copy current line
+    2yy : copy 2 lines
 
 12. Case 
 
-Vu : Lowercase current line
-VU : uppercase current line
-g~~ : Switch between lowercase and uppercase
-vEU : switch to lowercase
-ggguG : all word in file become lowercase
+    Vu : Lowercase current line
+    VU : uppercase current line
+    g~~ : Switch between lowercase and uppercase
+    vEU : switch to lowercase
+    ggguG : all word in file become lowercase
 
 13. Read and write file
 
-:1,10 w outfile	: Lưu dòng 1 đến dòng 10 trong outfile
-:1,10 w >> outfile : 	Nối dòng 1 đến dòng 10 trong outfile
-:r infile :	Insert content vào infile
-:23r infile :	Insert content vào infile sau dòng 23
+    :1,10 w outfile	: Lưu dòng 1 đến dòng 10 trong outfile
+    :1,10 w >> outfile : 	Nối dòng 1 đến dòng 10 trong outfile
+    :r infile :	Insert content vào infile
+    :23r infile :	Insert content vào infile sau dòng 23
 
 14. File explorer
 
-:e. :	Mở File explorer
-:Sex :	Chia đôi màn hình mở File explorer
-:Sex! :	Chia đôi màn hình theo chiều dọc và mở File Explorer
-:ls :	List Buffer
-:cd .. :	Đến thư mục cha
-:args :	List files
-:args *.php :	Mở file theo định dạng mong muốn
-gf :	Mở File tại nơi con trỏ chỉ
+    :e. :	Mở File explorer
+    :Sex :	Chia đôi màn hình mở File explorer
+    :Sex! :	Chia đôi màn hình theo chiều dọc và mở File Explorer
+    :ls :	List Buffer
+    :cd .. :	Đến thư mục cha
+    :args :	List files
+    :args *.php :	Mở file theo định dạng mong muốn
+    gf :	Mở File tại nơi con trỏ chỉ
 
 15. Alignment
 
-:%!fmt :	Align tất cả các dòng
-!}fmt :	Allign tất cả các dòng tại vị trí hiện tại
-5!!fmt :	Allign 5 dòng tiếp theo
+    :%!fmt :	Align tất cả các dòng
+    !}fmt :	Allign tất cả các dòng tại vị trí hiện tại
+    5!!fmt :	Allign 5 dòng tiếp theo
 
 16. Tab/Windows
 
-:tabnew	 : Tạo tab mới
-gt :	Chuyển sang tab tiếp theo
-:tabfirst :	Chuyển tới Tab đầu tiên
-:tablast :	Chuyển tới Tab cuối cùng
-:tabm n(position) :	Chuyển vị trí tab
+    :tabnew	 : Tạo tab mới
+    gt :	Chuyển sang tab tiếp theo
+    :tabfirst :	Chuyển tới Tab đầu tiên
+    :tablast :	Chuyển tới Tab cuối cùng
+    :tabm n(position) :	Chuyển vị trí tab
 
 17. Window Spliting
 
-:e filename	: Sửa filenane tại thời màn hình hiện tại
-:split filename :	Chia đôi màn hình và mở filename
-:sp filename :	Chia đôi màn hình theo chiều ngang
-:vs filename :	Chia đôi màn hình theo chiều dọc
-Ctrl + w + hướng : Điều hướng giữa các màn hình đã chia
-Ctrl + w_ : 	Max chiều dọc cho màn hình hiện tại
-Ctrl +w : 	Max chiều ngang cho màn hình hiện tại
-Ctrl:w=	 : Điều chỉnh kích thước bằng nhau cho tất cả các màn hình
-10 ctrl:w+	: Thêm 10 dòng cho màn hình hiện tại
-:hide :	Đóng màn hình hiện tại
-:nly :	Đóng tất cả màn hình trừ màn hình hiện tại
+    :e filename	: Sửa filenane tại thời màn hình hiện tại
+    :split filename :	Chia đôi màn hình và mở filename
+    :sp filename :	Chia đôi màn hình theo chiều ngang
+    :vs filename :	Chia đôi màn hình theo chiều dọc
+    Ctrl + w + hướng : Điều hướng giữa các màn hình đã chia
+    Ctrl + w_ : 	Max chiều dọc cho màn hình hiện tại
+    Ctrl +w : 	Max chiều ngang cho màn hình hiện tại
+    Ctrl:w=	 : Điều chỉnh kích thước bằng nhau cho tất cả các màn hình
+    10 ctrl:w+	: Thêm 10 dòng cho màn hình hiện tại
+    :hide :	Đóng màn hình hiện tại
+    :nly :	Đóng tất cả màn hình trừ màn hình hiện tại
 
 18. Auto:completetion
 
-Ctrl+n Ctrl+p (in insert mode) :	Complete word
-Ctrl+x Ctrl+l :	Complete line
-:set dictionary=dict :	Define dict as a dictionnary
-Ctrl+x Ctrl+k :	Complete with dictionnary
+    Ctrl+n Ctrl+p (in insert mode) :	Complete word
+    Ctrl+x Ctrl+l :	Complete line
+    :set dictionary=dict :	Define dict as a dictionnary
+    Ctrl+x Ctrl+k :	Complete with dictionnary
 
 19. Marks
 
-m {a:z} :	Marks vị trí hiện tại với chữ cái đc set {a :z}
-'{a:z} :	Move đến vị trí
-"	: Move đến vị trí trước đó
+    m {a:z} :	Marks vị trí hiện tại với chữ cái đc set {a :z}
+    '{a:z} :	Move đến vị trí
+    "	: Move đến vị trí trước đó
 
 20. Text indent
 
-:set autoindent :	Turn on auto:indent
-:set smartindent :	Turn on intelligent auto:indent
-:set shiftwidth=4 :	Định nghĩa indent bằng 4 space
-ctrl:t, ctrl:d :	Indent/un:indent trong insert mode
->> :	Indent
-<< :	Un:Indent
-=% :	Indent code trong dấu ngoặc
-1GVG= :	Indent toàn bộ file
-select + 4> : indent 4 times
-select + 4< : unindent 4 times
+    :set autoindent :	Turn on auto:indent
+    :set smartindent :	Turn on intelligent auto:indent
+    :set shiftwidth=4 :	Định nghĩa indent bằng 4 space
+    ctrl:t, ctrl:d :	Indent/un:indent trong insert mode
+    >> :	Indent
+    << :	Un:Indent
+    =% :	Indent code trong dấu ngoặc
+    1GVG= :	Indent toàn bộ file
+    select + 4> : indent 4 times
+    select + 4< : unindent 4 times
 
 21. Syntax highlighting
 
-:syntax on :	Turn on syntax highlighting
-:syntax off :	Turn off syntax highlighting
-:set syntax=perl :	Force syntax highlighting
+    :syntax on :	Turn on syntax highlighting
+    :syntax off :	Turn off syntax highlighting
+    :set syntax=perl :	Force syntax highlighting
